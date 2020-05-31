@@ -62,54 +62,54 @@ export default class Index extends Component {
           </div>
         </div>
 
-        <div className="container front-page">
-          <section className="section">
-            <h2>
-              Latest Articles
-              <Link to="/blog" className="view-all">
-                View all
-              </Link>
-            </h2>
-            <PostListing simple postEdges={latestPostEdges} />
-          </section>
+//         <div className="container front-page">
+//           <section className="section">
+//             <h2>
+//               Latest Articles
+//               <Link to="/blog" className="view-all">
+//                 View all
+//               </Link>
+//             </h2>
+//             <PostListing simple postEdges={latestPostEdges} />
+//           </section>
 
-          <section className="section">
-            <h2>
-              Most Popular
-              <Link to="/categories/popular" className="view-all">
-                View all
-              </Link>
-            </h2>
-            <PostListing simple postEdges={popularPostEdges} />
-          </section>
+//           <section className="section">
+//             <h2>
+//               Most Popular
+//               <Link to="/categories/popular" className="view-all">
+//                 View all
+//               </Link>
+//             </h2>
+//             <PostListing simple postEdges={popularPostEdges} />
+//           </section>
 
-          <section className="section">
-            <h2>Open Source Projects</h2>
-            <ProjectListing projects={projects} />
-          </section>
+//           <section className="section">
+//             <h2>Open Source Projects</h2>
+//             <ProjectListing projects={projects} />
+//           </section>
 
-          <section className="section">
-            <h2>Interviews</h2>
-            <SimpleListing simple data={podcasts} />
-          </section>
+//           <section className="section">
+//             <h2>Interviews</h2>
+//             <SimpleListing simple data={podcasts} />
+//           </section>
 
-          <section className="section">
-            <h2>Talks</h2>
-            <SimpleListing simple data={speaking} />
-          </section>
+//           <section className="section">
+//             <h2>Talks</h2>
+//             <SimpleListing simple data={speaking} />
+//           </section>
 
-          <section className="section">
-            <h2>{`Other People's Opinions`}</h2>
-            <div className="quotations">
-              {quotes.map(quote => (
-                <blockquote className="quotation" key={quote.name}>
-                  <p>{quote.quote}</p>
-                  <cite>— {quote.name}</cite>
-                </blockquote>
-              ))}
-            </div>
-          </section>
-        </div>
+//           <section className="section">
+//             <h2>{`Other People's Opinions`}</h2>
+//             <div className="quotations">
+//               {quotes.map(quote => (
+//                 <blockquote className="quotation" key={quote.name}>
+//                   <p>{quote.quote}</p>
+//                   <cite>— {quote.name}</cite>
+//                 </blockquote>
+//               ))}
+//             </div>
+//           </section>
+//         </div>
       </Layout>
     )
   }
